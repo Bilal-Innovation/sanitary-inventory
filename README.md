@@ -4,6 +4,12 @@
 # AddingNewStock
 <img width="852" height="436" alt="image" src="https://github.com/user-attachments/assets/a9cd48e0-c431-4e74-8b67-4d3acf238536" />
 
+# HistoryChecking
+<img width="842" height="436" alt="image" src="https://github.com/user-attachments/assets/f8ee3c09-15a8-4b76-bc43-c306606a522c" />
+
+## The project is in progress yet...
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
