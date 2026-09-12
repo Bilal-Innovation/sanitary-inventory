@@ -1,0 +1,241 @@
+/* =========================================================
+   HISTORY PAGE STYLING
+========================================================= */
+
+.history-page {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.history-card {
+  background: #ffffff;
+  border: 1px solid #4b4b4c;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.history-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #868787;
+  padding-bottom: 8px;
+}
+
+.history-card-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #001f24;
+  margin: 0;
+}
+
+/* Contrast Badges for Totals */
+.total-badge {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.blue-badge {
+  background: #83fee7;
+  color: #012380;
+  border: 1px solid #bfdbfe;
+}
+
+.green-badge {
+  background: #83fee7;
+  color: #094720;
+  border: 1px solid #bbf7d0;
+}
+
+.history-content {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Date Group Block */
+.date-group {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.date-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1e293b;
+  background: #a4f4b6;
+  padding: 9px 14px;
+  margin: 0;
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+/* Table Header Styles inside Date Group */
+.date-group thead {
+  background: #f1f5f9;
+  border-bottom: 2px solid #cbd5e1;
+}
+
+.date-group th {
+  padding: 10px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  text-align: left;
+  border-right: 1px solid #e2e8f0;
+}
+
+.date-group th:last-child {
+  border-right: none;
+  text-align: right;
+}
+
+.date-group table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.date-group td {
+  padding: 11px 12px;
+  font-size: 14px;
+  color: #0f172a;
+  border-bottom: 1px solid #e2e8f0;
+  border-right: 1px solid #f1f5f9;
+}
+
+.date-group td:last-child {
+  border-right: none;
+}
+
+.date-group tr:last-child td {
+  border-bottom: none;
+}
+
+/* Alternating Row Colors (Zebra Striping) */
+.date-group tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.date-group tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.date-group tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+.date-group td.amount {
+  font-weight: 700;
+  text-align: right;
+  color: #0369a1;
+}
+
+/* Load More Button Styling */
+.load-more-btn {
+  width: 100%;
+  padding: 12px;
+  background: #f8fafc;
+  border: 2px dashed #94a3b8;
+  border-radius: 8px;
+  color: #334155;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.load-more-btn:hover {
+  background: #f1f5f9;
+  border-color: #64748b;
+  color: #0f172a;
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   SEARCH & FILTER TOOLBAR STYLING
+========================================================= */
+.history-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #4b4b4c;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  gap: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 320px;
+  gap: 8px;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+  color: #1e293b;
+}
+
+.filter-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-dropdown label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.filter-dropdown select {
+  padding: 8px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  font-size: 14px;
+  outline: none;
+  color: #1e293b;
+  cursor: pointer;
+}
+
+.no-records {
+  text-align: center;
+  color: #94a3b8;
+  padding: 30px;
+  font-style: italic;
+}
+
+/* Responsive breakpoint for smaller desktop screens */
+@media (max-width: 1200px) {
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
+}
